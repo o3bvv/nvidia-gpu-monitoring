@@ -1,0 +1,7 @@
+#ifndef _NVIDIA_GPU_MONITOR_CONFIG_H
+#define _NVIDIA_GPU_MONITOR_CONFIG_H
+
+#cmakedefine HAVE_WINDOWS_H 1
+#cmakedefine HAVE_DLFCN_H 1
+
+#endif // _NVIDIA_GPU_MONITOR_CONFIG_H

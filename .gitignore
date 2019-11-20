@@ -1,6 +1,9 @@
 # Prerequisites
 *.d
 
+# Outputs
+out/
+
 # Compiled Object files
 *.slo
 *.lo
@@ -30,3 +33,6 @@
 *.exe
 *.out
 *.app
+
+# IDE
+.vs
