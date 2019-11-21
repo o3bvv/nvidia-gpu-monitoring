@@ -1,10 +1,10 @@
-﻿#include "monitor.h"
+#include "monitor.h"
 
 
 constexpr auto POLLING_PERIOD{std::chrono::milliseconds(250)};
 
 
-[[noreturn]] int main() {
+int main() {
   NVML nvml;
 
   auto nvml_info = nvml.get_info();
