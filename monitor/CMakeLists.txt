@@ -1,4 +1,4 @@
-﻿cmake_minimum_required(VERSION 3.8)
+cmake_minimum_required(VERSION 3.8)
 
 
 configure_file(${CMAKE_CURRENT_SOURCE_DIR}/config.h.in ${CMAKE_CURRENT_BINARY_DIR}/config.h)
@@ -16,6 +16,10 @@ endif()
 
 target_compile_features(dlib PRIVATE cxx_std_17)
 target_link_libraries(dlib utils)
+
+if(HAVE_DLFCN_H)
+  target_link_libraries(dlib -ldl)
+endif()
 
 
 add_library(nvml STATIC "nvml.cpp" "nvml.h" "dlib.h" "config.h")
