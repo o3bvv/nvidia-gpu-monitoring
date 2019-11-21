@@ -3,6 +3,7 @@
 
 # Outputs
 out/
+build/
 
 # Compiled Object files
 *.slo
