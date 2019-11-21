@@ -23,7 +23,7 @@ int main() {
 
   for (auto device = devices_begin; device != devices_end; ++device) {
     const auto& info = (*device).get_info();
-    std::cout << "- index:"              << "\t\t"   << info.index << "\n"
+    std::cout << "- device_index:"       << "\t\t"   << info.index << "\n"
               << "  name:"               << "\t\t\t" << info.name  << "\n"
               << "  fan_speed:"          << "\t\t"   << info.metrics.fan_speed          << "%"  << "\n"
               << "  temperature:"        << "\t\t"   << info.metrics.temperature        << "C"  << "\n"
