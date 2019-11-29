@@ -37,3 +37,4 @@ build/
 
 # IDE
 .vs
+.vscode
