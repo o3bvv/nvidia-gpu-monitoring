@@ -6,7 +6,8 @@ import io
 
 def make_args_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Extract data from monitor log"
+        description="Extract data from monitor log",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(
         "monitor_log",

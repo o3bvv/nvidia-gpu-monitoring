@@ -7,7 +7,8 @@ import pandas as pd
 
 def make_args_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Filter monitoring data for a specific device"
+        description="Filter monitoring data for a specific device",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(
         "device_index",

@@ -38,7 +38,8 @@ class Color(Enum):
 
 def make_args_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
-        description="Visualize device data"
+        description="Visualize device data",
+        formatter_class=argparse.ArgumentDefaultsHelpFormatter,
     )
     parser.add_argument(
         "output_file_path_format",
